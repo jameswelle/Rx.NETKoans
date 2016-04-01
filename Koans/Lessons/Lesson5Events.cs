@@ -14,14 +14,14 @@ namespace Koans.Lessons
         public void TheMainEvent()
         {
             var received = new StringBuilder();
-            var textChanges = Observable.FromEventPattern<TextChangedEventArgs>(this, "TextChanged");                                                                                                
+            var textChanges = Observable.FromEventPattern<TextChangedEventArgs>(this, "TextChanged");
             using (textChanges.Subscribe(e => received.Append(e.EventArgs.value)))
             {
-                TextChanged(null, new TextChangedEventArgs {value = "B"});
-                TextChanged(null, new TextChangedEventArgs {value = "A"});
-                TextChanged(null, new TextChangedEventArgs {value = "R"});
+                TextChanged(null, new TextChangedEventArgs { value = "B" });
+                TextChanged(null, new TextChangedEventArgs { value = "A" });
+                TextChanged(null, new TextChangedEventArgs { value = "R" });
             }
-            TextChanged(null, new TextChangedEventArgs {value = "T"});
+            TextChanged(null, new TextChangedEventArgs { value = "T" });
             Assert.AreEqual(___, received.ToString());
         }
 
