@@ -7,6 +7,7 @@ using System.Reactive.Subjects;
 using System.Threading;
 using Koans.Utils;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Range = Koans.Utils.Range;
 
 namespace Koans.Lessons
 {

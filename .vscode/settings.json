@@ -1,0 +1,5 @@
+{
+    "dotnet-test-explorer.testProjectPath": "Koans/Koans.csproj",
+    "dotnet-test-explorer.runInParallel": true,
+    "dotnet-test-explorer.autoWatch": true
+}
